@@ -1,0 +1,60 @@
+version: 2
+
+sources:
+   - name: public
+     description: A netflix database.
+     database: netflix2
+     tables:
+        - name: netflix
+          description: netflix data.
+          columns:
+            - name: title
+              description: title data
+              tests:
+                - unique
+                - not_null
+
+
+          columns:
+            - name: rating
+              description: rating data
+              tests:
+                - unique
+                - not_null
+
+          columns:
+            - name: ratinglevel
+              description: ratinglevel data
+              tests:
+                - unique
+                - not_null
+            
+          columns:
+            - name: ratingdescription
+              description: ratingdescription data
+              tests:
+                - unique
+                - not_null
+
+          columns:
+            - name: release_year
+              description: release_year data
+              tests:
+                - unique
+                - not_null
+
+
+          columns:
+            - name: user_rating_score
+              description: user_rating_score data
+              tests:
+                - unique
+                - not_null
+
+
+          columns:
+            - name: user-rating_size
+              description: user_rating_size data
+              tests:
+                - unique
+                - not_null
