@@ -1,1 +1,0 @@
-select release_year, rating from netflix

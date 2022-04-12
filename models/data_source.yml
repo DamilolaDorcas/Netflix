@@ -3,35 +3,35 @@ version: 2
 sources:
    - name: public
      description: A netflix database.
-     database: netflix2
+     database: netflix
      tables:
         - name: netflix
           description: netflix data.
+          columns:
+            - name: show_id
+              description: show_id data
+              tests:
+                - unique
+                - not_null
+
+
+          columns:
+            - name: type
+              description: type data
+              tests:
+                - unique
+                - not_null
+
           columns:
             - name: title
               description: title data
               tests:
                 - unique
                 - not_null
-
-
-          columns:
-            - name: rating
-              description: rating data
-              tests:
-                - unique
-                - not_null
-
-          columns:
-            - name: ratinglevel
-              description: ratinglevel data
-              tests:
-                - unique
-                - not_null
             
           columns:
-            - name: ratingdescription
-              description: ratingdescription data
+            - name: director
+              description: director data
               tests:
                 - unique
                 - not_null
@@ -45,16 +45,51 @@ sources:
 
 
           columns:
-            - name: user_rating_score
-              description: user_rating_score data
+            - name: cast
+              description: cast data
               tests:
                 - unique
                 - not_null
 
 
           columns:
-            - name: user-rating_size
-              description: user_rating_size data
+            - name: country
+              description: country data
               tests:
                 - unique
                 - not_null
+
+          columns:
+            - name: date_added
+              description: date_added data
+              tests:
+                - unique
+                - not_null
+
+          columns:
+            - name: rating
+              description: rating data
+              tests:
+                - unique
+                - not_null
+
+          columns:
+            - name: duration
+              description: duration data
+              tests:
+                - unique
+                - not_null
+
+          columns:
+            - name: listed_in
+              description: listed_in data
+              tests:
+                - unique
+                - not_null 
+
+          columns:
+            - name: description
+              description: discription data
+              tests:
+                - unique
+                - not_null               
