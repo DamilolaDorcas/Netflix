@@ -1,1 +1,1 @@
-select show_id, listed_in, rating,date_added,country release_year, type from netflix
+select show_id, listed_in, rating,date_added,country, release_year, type from netflix
